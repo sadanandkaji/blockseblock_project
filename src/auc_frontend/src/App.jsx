@@ -405,7 +405,7 @@ const placeBid = async (e) => {
       
       // Check if identity is available
       if (!identity && user) {
-        console.warn("Connected with user but no identity is available. Check IdentityKitProvider setup.");
+        console.warn("Connecte with user but no identity is available. Check IdentityKitProvider setup.");
         setError("Connected, but identity is not available. Make sure IdentityKitProvider is configured correctly.");
       }
       
@@ -426,7 +426,7 @@ const placeBid = async (e) => {
             <div>
               <p>Logged in as: {user.principal.toText()}</p>
               <p>Identity available: {identity ? "Yes" : "No"}</p>
-              <p>Actor initialized: {authenticatedActor ? "Yes" : "No"}</p>
+              <p>Actor initialized: {authenticatedActor ? "Yes" : "N"}</p>
             </div>
           )}
           <ConnectWallet onError={handleConnectionError} />
